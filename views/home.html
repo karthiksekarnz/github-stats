@@ -1,0 +1,12 @@
+<form id="custom-search-form" class="form-search form-horizontal">
+	<div class="input-append span12">
+		<input type="text" class="search-query mac-style" ng-model="user" placeholder="Search User">
+		<button type="submit" class="btn" ng-click="getUserStats(user)"><i class="icon-search"></i></button>
+	</div>
+</form>
+<div class="row-fluid" ng-if="repos != undefined">
+	<h4>Repositories</h4>
+	<ul id="repositories" class="unstyled" ng-repeat="repo in repos">
+		<li><a href="#/repo/{{repo.id}}" ng-click="getRepoStats(repo)">{{repo.name}}</a></li>
+	</ul>
+</div>

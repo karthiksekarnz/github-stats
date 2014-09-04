@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="GitUserStats">
+<head>
+	<title>Github User stats</title>
+	<link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/2.3.2/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:100,400,700">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div id="wrapper" class="container">
+		<h2>Github User Stats</h2>
+		<div class="row-fluid" ng-controller="GitUserStatsController">
+			<div ng-view></div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/bower_components/Chart.js/Chart.min.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-route.js"></script>
+	<script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/2.3.2/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/ui-bootstrap-tpls.min.js"></script>
+	<script type="text/javascript" src="js/angular-underscore.js"></script>
+	<script type="text/javascript" src="js/bower_components/ng-chartjs/dist/angular-chartjs.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="js/userstats.js"></script>
+</body>
+</html>

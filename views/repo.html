@@ -1,0 +1,22 @@
+<div class="container" ng-controller="RepoStatsController">
+	<h3>{{repo.name}}</h3>
+	<table class="table table-striped">
+		<tr>
+			<th>Repository Details</th>
+		</tr>
+		<tr>
+			<td></td>
+		</tr>
+		<tr>
+			<td><a href="{{repo.html_url}}">Github Link</a></td>
+		</tr>
+		<tr>
+			<td><a href="{{repo.clone_url}}">Copy link to clone</a></td>
+		</tr>
+	</table>
+	<h4>Languages</h4>
+	<div class="span6"  ng-if="languages != undefined">
+		<cjs-doughnut dataset="languages" responsive="true"></cjs-doughnut>
+	</div>
+</div>
+	
